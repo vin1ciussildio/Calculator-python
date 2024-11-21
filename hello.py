@@ -14,16 +14,35 @@ num1= float( input())
 print ("Digite um segundo numero qualquer (Usar (.) em caso de numeros com virgula): ")
 num2= float( input())
 
-#Funçoes
-soma = float (num1 + num2)
-multiplicacao = float (num1*num2)
-divisao = float (num1/num2)
-subitracao = float (num1-num2)
+#Seleção de Função:
+op = input(f"Qual operacao voce deseja usar hoje {nome}? (+: soma |- : subitracao| /: divisao | *: multiplicacao): ")
 
-#Resultados
-print (f"O primeiro numero usado para os cauculos e:  {num1}")
-print (f"O segundo numero usado para os cauculos e:  {num2}")
-print (f"A soma dos dois numeros e:  {soma}")
-print (f"A multiplicacao dos dois numeros e::  {multiplicacao}")
-print (f"A divisao dos dois numeros e:  {divisao}")
-print (f"A subitracao dos dois numeros e:  {subitracao}")
+#Descrição das funçoes usando o case:
+match op:
+  #Função de soma:
+    case "+":
+      print (f"O primeiro numero usado para os cauculos e:  {num1}")
+      print (f"O segundo numero usado para os cauculos e:  {num2}")
+      soma = float (num1 + num2)
+      print (f"A soma dos dois numeros e:  {soma}")
+#Função de subitração:
+    case "-":
+      print (f"O primeiro numero usado para os cauculos e:  {num1}")
+      print (f"O segundo numero usado para os cauculos e:  {num2}")
+      subitracao = float (num1-num2)
+      print (f"A subitracao dos dois numeros e:  {subitracao}")
+#Função de divisão:
+    case "/":
+      print (f"O primeiro numero usado para os cauculos e:  {num1}")
+      print (f"O segundo numero usado para os cauculos e:  {num2}")
+      divisao = float (num1/num2)
+      print (f"A divisao dos dois numeros e:  {divisao}")
+#Função de Multiplicação:
+    case "*":
+      print (f"O primeiro numero usado para os cauculos e:  {num1}")
+      print (f"O segundo numero usado para os cauculos e:  {num2}")
+      multiplicacao = float (num1*num2)
+      print (f"A multiplicacao dos dois numeros e::  {multiplicacao}")
+
+
+      
