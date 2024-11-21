@@ -1,14 +1,26 @@
-Nome = "Hyde"
-num1 = 23 
-num2 = 32 
-soma = num1 + num2
-multiplicacao = num1*num2
-divisao = num1/num2
-subitracao = num1-num2
+#Agradecimento por usar o programa:
+print ("Olá bem vindo a minha calculadora em python ^W^")
 
-print ("test")
+#Input do nome do usuario:
+nome = input("Qual é o seu nome ?: ")
+print(f"Muito prazer em conhecer {nome} ^W^")
 
-print (f"ola {Nome} seja muito bem vindo(a) a minha calculadora ^W^")
+#Input do Primeiro numero: 
+print ("vamos começar com o basico ^W^")
+print ("Digite um numero qualquer (Usar (.) em caso de numeros com virgula): ")
+num1= float( input())
+
+#Imput do segundo numero:
+print ("Digite um segundo numero qualquer (Usar (.) em caso de numeros com virgula): ")
+num2= float( input())
+
+#Funçoes
+soma = float (num1 + num2)
+multiplicacao = float (num1*num2)
+divisao = float (num1/num2)
+subitracao = float (num1-num2)
+
+#Resultados
 print (f"O primeiro numero usado para os cauculos e:  {num1}")
 print (f"O segundo numero usado para os cauculos e:  {num2}")
 print (f"A soma dos dois numeros e:  {soma}")
